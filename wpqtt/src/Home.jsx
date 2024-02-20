@@ -1,6 +1,12 @@
+import Nav from './Nav'
+
 const Home=()=>{
 return(
-    <h1>Hello</h1>
+    <div className='min-h-screen'>
+        <Nav />
+   <h1 className="bold text-3xl">Hello</h1>
+    </div>
+    
 );
 };
 export default Home;

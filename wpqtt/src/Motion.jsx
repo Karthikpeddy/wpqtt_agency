@@ -14,14 +14,17 @@ const Motion = () => {
         <div>
             <AnimatePresence>
                 {!showHomePage && (
-                    <motion.div
+                    <motion.div 
                         initial="initial"
                         animate="animate"
                         variants={logoAnimationVariants}
                         onAnimationComplete={() => setShowHomePage(true)}
                     >
                         {/* <img src="your_logo_path" alt="Company Logo" /> */}
-                        <h1>WPQTT</h1>
+                        <div class="flex items-center justify-center h-screen ">
+                        <h1 className='text-center text-5xl bold align-middle text-white md:text-3xl'>WPQTT</h1>
+                        </div>
+                       
                     </motion.div>
                 )}
             </AnimatePresence>
